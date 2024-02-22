@@ -23,7 +23,6 @@ This Bash script provides a command-line interface for creating a new user with 
 ```
 
 Note: The script will prompt for confirmation before proceeding with user creation.
-<<<<<<< HEAD
 
 ### **Script Description**
 
@@ -57,5 +56,3 @@ chmod +x creuser.sh
 ```
 
 If executed directly, the script will create the specified user and RSA keys.
-=======
->>>>>>> cf2580fbf9c8e813735025126d113602b1173eaf
