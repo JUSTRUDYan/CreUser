@@ -5,9 +5,7 @@ This Bash script provides a command-line interface for creating a new user with 
 ### Usage
 
 ```bash
-bashCopy code
 ./creuser.sh -n <user_name> -f <user_folder_path> -p <user_pass_phrase> -b <rsa_key_bit_length>
-
 ```
 
 ### Options
@@ -21,9 +19,7 @@ bashCopy code
 ### Usage Example
 
 ```bash
-bashCopy code
 ./creuser.sh -n pupyan -f /home/pupyan -p password1234
-
 ```
 
 Note: The script will prompt for confirmation before proceeding with user creation.
