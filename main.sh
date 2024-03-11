@@ -99,7 +99,7 @@ creuser() {
         mkdir -p "$user_path" || { echo "Failed to create user directory $user_path"; exit 1; }
     fi
 
-    ssh-keygen -t rsa -b "$rsa_bit" -f "$user_path/id_rsa" -N "$user_pass_phrase" || { echo "Failed to generate RSA keys with $rsa_bit bits"; exit 1; }
+    ssh-keygen -t rsa -b "$rsa_bit" -f "$user_path/id_rsa" -N "$user_pass_phrase" -m PEM || { echo "Failed to generate RSA keys with $rsa_bit bits"; exit 1; }
 
     useradd -m -d "$user_path" -s /bin/bash "$user_name" || { echo "Failed to create user $user_name"; exit 1; }
     echo "$user_name:$user_pass_phrase" | chpasswd || { echo "Failed to set password for user $user_name"; exit 1; }
