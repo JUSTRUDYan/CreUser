@@ -49,6 +49,7 @@ validate_inputs() {
     echo "  - User Name: $user_name"
     echo "  - User Folder Path: $user_path"
     echo "  - RSA Key Bit Length: $rsa_bit"
+    echo "  - User pass phrase: $user_pass_phrase"
 
     while true; do
         read -p "Are these parameters correct? (yes/no): " answer
